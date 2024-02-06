@@ -1,7 +1,9 @@
-from .rewarder import Rewarder
-from ..density import OnlineKMeansEstimator
+from rum.rewarder import Rewarder
+from rum.density import KMeansDensityEstimator
+
 from typing import Callable, Union, Optional, Tuple
 from torch import Tensor, FloatTensor, LongTensor
+
 from stable_baselines3.common.buffers import RolloutBuffer
 import concurrent.futures
 from enum import Enum
@@ -49,7 +51,7 @@ class KMERewarder(Rewarder):
         self.entropy_buff = 0.0 # store previous entropy
 
         # underlying kmeans density estimator
-        self.kmeans = OnlineKMeansEstimator(
+        self.kmeans = KMeansDensityEstimator(
             k, dim_states, learning_rate, balancing_strength,
             distance_func, origin, init_method, homeostatis
         )

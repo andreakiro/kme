@@ -1,4 +1,4 @@
-from rum.rewarder.rewarder import Rewarder
+from rum.rewarder import Rewarder
 from rum.density import KNNDensityEstimator
 from dataclasses import dataclass
 
