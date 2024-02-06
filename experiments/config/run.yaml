@@ -19,3 +19,4 @@ samples_per_iter: 100
 
 ambient_dim: 3
 sampling_method: 'sample'
+use_wandb: false
