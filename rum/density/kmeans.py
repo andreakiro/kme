@@ -1,9 +1,11 @@
-from .density import Density
-from ..learner import Learner
-from ..geometry import EuclideanGeometry
+from rum.learner import Learner
+from rum.geometry import EuclideanGeometry
+from rum.density import Density
+
 from torch import Tensor, LongTensor, FloatTensor
 from typing import Callable, Union, Optional, Tuple, Literal
 from inspect import signature, Parameter
+
 import numpy as np
 import torch
 import os
@@ -36,7 +38,7 @@ class EntropicFunction:
         return self.func(x, **self.kwargs)
 
 
-class OnlineKMeansEstimator(Density, Learner):
+class KMeansDensityEstimator(Density, Learner):
 
     DEFAULT_LR = 0.1
     DEFAULT_BS = 0.1
