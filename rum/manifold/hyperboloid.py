@@ -1,4 +1,4 @@
-from rum.manifold import Manifold
+from rum.manifold.manifold import Manifold
 
 import numpy as np
 import itertools

@@ -1,4 +1,4 @@
-from rum.manifold import Manifold, GlobalChartAtlas
+from rum.manifold.manifold import Manifold, GlobalChartAtlas
 
 import numpy as np
 import itertools
