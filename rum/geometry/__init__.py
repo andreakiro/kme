@@ -1,3 +1,3 @@
-from .neural_geometry import NeuralGeometry
-from .euclidean_geometry import EuclideanGeometry
-from .geometry import Geometry
+from rum.geometry.geometry import Geometry
+from rum.geometry.neural_geometry import NeuralGeometry
+from rum.geometry.euclidean_geometry import EuclideanGeometry

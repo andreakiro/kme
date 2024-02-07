@@ -1,5 +1,7 @@
+from rum.manifold import Manifold, GlobalChartAtlas
+
 import numpy as np
-from .manifold import Manifold, GlobalChartAtlas
+
 
 class TorusManifold(Manifold):
   def __init__(self, dim):

@@ -1,6 +1,7 @@
 import torch
 
-class Density():
+
+class Density:
     """
     A base class representing a loose abstraction of a density function on a space on a manifold.
     This class provides a framework for building specific density estimators, allowing for various implementations
@@ -12,7 +13,7 @@ class Density():
     def __init__(self, dim: int) -> None:
         assert dim > 0, "Dimension must be positive."
         self.dim = dim
-    
+
     def pdf(self, x: torch.Tensor) -> float:
         """
         Compute the probability density function (pdf) at a given point.
@@ -28,7 +29,7 @@ class Density():
         Returns: torch.Tensor: Samples from the density, of shape `(n_samples, dim)`.
         """
         raise NotImplementedError()
-    
+
     def random_walk(self, n_samples: int, x: torch.Tensor = None) -> torch.Tensor:
         """
         Generate samples from n steps of a random walk in the density.
@@ -38,7 +39,7 @@ class Density():
         Returns: torch.Tensor: Random walk samples, of shape `(n_samples, dim)`.
         """
         raise NotImplementedError()
-    
+
     def entropy(self) -> float:
         """
         Compute the entropy of the density.

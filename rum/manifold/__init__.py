@@ -1,6 +1,6 @@
-from .manifold import Manifold, GeodesicManifold
-from .euclidean import EuclideanManifold
-from .sphere import SphereManifold
-from .torus import TorusManifold
-from .hyperboloid import HyperboloidManifold
-from .hyperbolic_parabola import HyperbolicParabolaManifold
+from rum.manifold.manifold import Manifold, GeodesicManifold
+from rum.manifold.euclidean import EuclideanManifold
+from rum.manifold.sphere import SphereManifold
+from rum.manifold.torus import TorusManifold
+from rum.manifold.hyperboloid import HyperboloidManifold
+from rum.manifold.hyperbolic_parabola import HyperbolicParabolaManifold
