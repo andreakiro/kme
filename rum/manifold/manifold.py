@@ -1,11 +1,13 @@
+from rum.density import Density
+from rum.geometry import Geometry
+from rum.geometry import EuclideanGeometry
+from rum.manifold.util import sphere_sample_uniform
+
 import numpy as np
 import itertools
 import scipy
 import gymnasium
-from ..density import Density
-from ..geometry import Geometry
-from ..geometry import EuclideanGeometry
-from .util import sphere_sample_uniform
+
 
 class Chart():
   def __init__(self, map_, inverse_map, norm, differential_map=None, differential_inverse_map=None):

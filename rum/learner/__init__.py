@@ -1,1 +1,1 @@
-from .learner import Learner
+from rum.learner.learner import Learner

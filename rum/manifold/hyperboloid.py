@@ -1,6 +1,8 @@
+from rum.manifold import Manifold
+
 import numpy as np
 import itertools
-from .manifold import Manifold
+
 
 class HyperboloidManifold(Manifold):
   def __init__(self, dim, sampler=None):

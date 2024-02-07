@@ -1,8 +1,8 @@
-import faiss
-import torch
-
 from rum.density import Density
 from rum.learner import Learner
+
+import faiss
+import torch
 
 
 class KNNDensityEstimator(Density, Learner):

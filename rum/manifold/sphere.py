@@ -1,7 +1,9 @@
+from rum.manifold import Manifold, Atlas, Chart
+from rum.manifold.util import sphere_sample_uniform
+
 import numpy as np
 import itertools
-from .manifold import Manifold, Atlas, Chart
-from .util import sphere_sample_uniform
+
 
 class SphereAtlas(Atlas):
   @staticmethod

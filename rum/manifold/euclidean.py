@@ -1,6 +1,8 @@
+from rum.manifold import Manifold, GlobalChartAtlas
+
 import numpy as np
 import itertools
-from .manifold import Manifold, GlobalChartAtlas
+
 
 class EuclideanManifold(Manifold):
   def __init__(self, dim, sampler):
